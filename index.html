@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dictionary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div> 
-       <input type="text" value="" id="search-input"> 
-       <button type="submit" id="search-button">Search</button>
-    </div>
-    <div id="content">
-        <!-- <p>`meaning :${data[0].meanings[1].definitions [0]}`</p>
-        <p>`type :${data[0].meanings[1].partOfSpeech}`</p>
-        <p>`meaning :${data[0].meanings[2].definitions [0]}`</p>
-        <p>`type :${data[0].meanings[2].partOfSpeech}`</p> -->
-        
+    <div class="container">
+        <div class="search"> 
+            <input type="text" value="" id="search-input" placeholder="Give me a word"> 
+            <button type="submit" id="search-button">Search</button>
+        </div><br><br>
+        <div id="content">
+            <!-- <p class="type">`meaning :${data[0].meanings[1].definitions [0]}`</p>
+            <p class="meaning">`type :${data[0].meanings[1].partOfSpeech}`</p>
+            <p class="type">`meaning :${data[0].meanings[2].definitions [0]}`</p>
+            <p class="meaning">`type :${data[0].meanings[2].partOfSpeech}`</p> -->
+            
+        </div>
     </div>
 
 
@@ -25,7 +34,7 @@
 
 
     <script src="data.js"></script>
-    <script src="ui.js"></script>
+    <script src="UI.js"></script>
     
 
     <script src="app.js"></script>
